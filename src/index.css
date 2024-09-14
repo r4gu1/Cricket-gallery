@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.title {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  font-size: 40px;
+  color: white;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+margin: 20px;
+  }
+  .box1 img{
+    margin: 10px;
+    width: 90%;
+    height: 320px; /* Set a fixed height for images */
+    border: 2px solid transparent; /* Initial transparent border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Initial box shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+    
+  }
+  .box1{
+    border: solid rgb(0, 0, 0) 1px;
+    margin: 10px;
+  }
+  .box1 img:hover {
+    box-shadow: 0 0 55px rgba(12, 11, 12, 0.8); /* Glowing effect on hover */
+    border-color: rgba(200, 101, 147, 0.907); /* Adds a subtle border color */
+  
+}
+.box1 h1:hover{
+
+    background: linear-gradient(to right, #00c6ff, #0072ff); 
+    font-family: "Georgia", "Times New Roman", serif; 
+    font-style: italic; 
+}
+
+ .box1 h1{
+  text-align: center;
+ }
+    
+
+ /* Extra Large Tablets (up to 1280px) */
+/* Large Desktops (1440px and above) */
+@media (max-width: 1440px) {
+  /* Example styles */
+  .box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Desktops (1200px - 1440px) */
+@media (max-width: 1200px) {
+  /* Example styles */
+  .box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 105git0px) {
+  /* Example styles */
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Devices (480px - 768px) */
+@media (max-width: 768px) {
+  /* Example styles */
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Extra Small Screens (320px - 480px) */
+@media (max-width: 480px) {
+  /* Example styles */
+  .box {
+    grid-template-columns: 1fr;
+  }
 }
